@@ -162,3 +162,27 @@ p, ul li {
   border: 2px solid var(--orange-mid) !important;
   box-shadow: none !important;
 }
+
+.zoom-container {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom-container.active {
+  transform: scale(1.2);
+  cursor: url('https://cdn.jsdelivr.net/npm/bootstrap-icons/font/icons/zoom-out.svg'), zoom-out;
+}
+
+.zoom-icon {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: var(--blue-dark);
+  pointer-events: none;
+}
+
+

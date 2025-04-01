@@ -3,7 +3,7 @@
         <div class="col-12 col-lg-7">
             <h1 data-aos="fade-up">Conheça o segredo</h1>
             <p data-aos="fade-up" data-aos-delay="200">
-              A  A batata frita é um dos acompanhamentos mais amados no mundo todo. Crocante por fora, macia
+                A batata frita é um dos acompanhamentos mais amados no mundo todo. Crocante por fora, macia
                 por dentro! Conheça os truques dos chefes para alcançar a perfeição.
             </p>
 
@@ -42,17 +42,19 @@
                 <button id="btn-start" class="btn btn-primary" type="button">
                     Vamos começar
                 </button>
-                <button class="btn btn-secondary" type="button">
+                <button id="btn-video" class="btn btn-secondary" type="button">
                     Me leve direto a receita
                 </button>
             </div>
         </div>
-        <div class="col-12 my-4 col-lg-5 my-lg-auto position-relative text-lg-end text-center">
-            <img id="polaroid" class="img-fluid" src="assets/images/polaroid.jpg"
-                alt="Foto de batatas fritas com molho rosê que combina com a identidade visual do site"
-                data-aos="flip-right" data-aos-delay="1100">
+        <div class="col-12 my-4 col-lg-5 my-lg-auto position-relative text-lg-end text-center" data-aos="flip-right"
+            data-aos-delay="1100">
+            <div id="img-zoom" class="zoom-container position-relative d-inline-block">
+                <img id="polaroid" class="img-fluid" src="assets/images/polaroid.jpg"
+                    alt="Foto de batatas fritas com molho rosê que combina com a identidade visual do site">
+                <i class="bi bi-search zoom-icon"></i>
+            </div>
         </div>
-
     </div>
 </section>
 
@@ -60,7 +62,7 @@
 <section class="choosing rounded shadow" data-aos="fade-in" data-aos-delay="1200">
     <div class="row mt-4 py-5">
         <div class="col-12 d-lg-none">
-            <img class="img-fluid" src="../assets/images/batataInicioPossibilidades.jpg"
+            <img class="img-fluid" src="assets/images/batataInicioPossibilidades.jpg"
                 alt="Batata inteira ao centro, com algumas batatas fritas à direita e batatas rústicas com alecrim à esquerda.">
         </div>
 
@@ -74,13 +76,13 @@
 
 <section id="carousel-section" class="carousel slide mt-4 bg-white rounded shadow" data-aos="fade-up">
     <div data-bs-ride="carousel">
-        <div class="carousel-inner text-center"  data-bs-ride="carousel">
+        <div class="carousel-inner text-center" data-bs-ride="carousel">
 
             <div class="carousel-item active" data-index="0">
                 <div class="container">
                     <div class="row my-2">
                         <div class="col-10 col-md-5 col-lg-2 mx-auto">
-                            <img src="../assets/images/batata1.png" class="img-fluid"
+                            <img src="assets/images/batata1.png" class="img-fluid"
                                 alt="Batata Asterix – Batata com pele rosada e interior amarelo-claro.">
                         </div>
                         <div class="col-10 col-md-5  d-flex align-items-center mx-auto">
@@ -99,7 +101,7 @@
                 <div class="container">
                     <div class="row my-2">
                         <div class="col-10 col-md-5 col-lg-2 mx-auto">
-                            <img src="../assets/images/batata2.png" class="img-fluid"
+                            <img src="assets/images/batata2.png" class="img-fluid"
                                 alt="Batata Asterix – Batata com pele rosada e interior amarelo-claro.">
                         </div>
                         <div class="col-10 col-md-5  d-flex align-items-center mx-auto">
@@ -119,7 +121,7 @@
                 <div class="container">
                     <div class="row my-2">
                         <div class="col-10 col-md-5 col-lg-2 mx-auto">
-                            <img src="../assets/images/batata3.png" class="img-fluid"
+                            <img src="assets/images/batata3.png" class="img-fluid"
                                 alt="Batata Asterix – Batata com pele rosada e interior amarelo-claro.">
                         </div>
                         <div class="col-10 col-md-5  d-flex align-items-center mx-auto">
@@ -184,7 +186,7 @@
                     </p>
                 </div>
                 <div class="col-12 col-lg-5 mx-auto">
-                    <img src="../assets/images/oil1.png" class="img-fluid"
+                    <img src="assets/images/oil1.png" class="img-fluid"
                         alt="Três óleos diferentes em jarras de vidro com bico dosador. Cada um possui uma cor diferente, em tons amarelados.">
                 </div>
             </div>
@@ -203,7 +205,7 @@
                     </p>
                 </div>
                 <div class="col-12 col-lg-5 mx-auto">
-                    <img src="../assets/images/oil2.png" class="img-fluid"
+                    <img src="assets/images/oil2.png" class="img-fluid"
                         alt="Termômetro de cozinha medindo a temperatura do óleo que está fritando as batatas em uma panela.">
                 </div>
             </div>
@@ -229,15 +231,26 @@
                     </p>
                 </div>
                 <div class="col-12 col-lg-5 mx-auto">
-                    <img src="../assets/images/oil3.png" class="img-fluid"
+                    <img src="assets/images/oil3.png" class="img-fluid"
                         alt="Duas panelas de fritura lado a lado: uma com batatas fritas levemente douradas e outra com batatas mais crocantes e alaranjadas, destacando o processo de fritura dupla.">
                 </div>
             </div>
 
         </div>
     </div>
-
 </section>
+
+<section class="container text-center mt-4 video" data-aos="zoom-in">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+            <video class="img-fluid rounded shadow" controls poster="assets/video/thumbnail.jpg">
+                <source src="assets/video/video.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos HTML5.
+            </video>
+        </div>
+    </div>
+</section>
+
 
 <section id="the-end" class="mt-4" style="display: none;">
     <div class="row" data-aos="fade-up">
