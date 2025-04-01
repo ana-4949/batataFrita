@@ -69,6 +69,14 @@
             observer.observe(document.body, { childList: true, subtree: true });
     
             loadPage("pages/content.html");
+
+                
+    if (window.location.hostname.includes("github.io")) {
+      document.querySelector("base")?.remove();
+      const base = document.createElement("base");
+      base.href = "/batataFrita/";
+      document.head.appendChild(base);
+    }
     
         });
     </script>
