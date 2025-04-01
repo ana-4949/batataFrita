@@ -1,0 +1,67 @@
+<section class="container mt-5">
+    <h1>Avaliação</h1>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-11">
+            <div class="multi-choice">
+                <h3>Pergunta 1</h3>
+                <ol>
+                    <li><a>Resposta Correta.</a></li>
+                    <li><a>Resposta Incorreta.</a></li>
+                    <li><a>Resposta Incorreta.</a></li>
+                </ol>
+                <a class="btn-confirmar" data-pergunta="multi-choice">Confirmar</a> 
+                <div class="feedback feedback-correto" data-pergunta="multi-choice">
+                    <p class="text-center">Parabéns, você acertou.</p>
+                </div>
+                <div class="feedback feedback-try" data-pergunta="multi-choice">
+                    <p class="text-center">Infelizmente você errou. Tente novamente.</p>
+                </div>
+                <div class="feedback feedback-incorreto" data-pergunta="multi-choice">
+                    <p class="text-center">Que pena, você errou.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-11">
+            <div class="verdadeiro-falso">
+                <h3>Pergunta 2</h3>
+                <div class="buttons-vf" data-index="0">
+                    <button class="btn-vf" data-resposta="V">V</button>
+                    <button class="btn-vf" data-resposta="F">F</button>
+                    <p>Alternativa Verdadeira 1</p>
+                </div>
+                <div class="buttons-vf" data-index="1">
+                    <button class="btn-vf" data-resposta="V">V</button>
+                    <button class="btn-vf" data-resposta="F">F</button>
+                    <p>Alternativa falsa 1</p>
+                </div>
+                <div class="buttons-vf" data-index="2">
+                    <button class="btn-vf" data-resposta="V">V</button>
+                    <button class="btn-vf" data-resposta="F">F</button>
+                    <p>Alternativa Verdadeira 2</p>
+                </div>
+                <div class="buttons-vf" data-index="3">
+                    <button class="btn-vf" data-resposta="V">V</button>
+                    <button class="btn-vf" data-resposta="F">F</button>
+                    <p>Alternativa falsa 2</p>
+                </div>
+
+                <a class="btn-confirmar" data-pergunta="verdadeiro-falso">Confirmar</a>
+
+                <div class="feedback feedback-correto" data-pergunta="verdadeiro-falso">
+                    <p class="text-center">Parabéns, você acertou.</p>
+                </div>
+                <div class="feedback feedback-try" data-pergunta="verdadeiro-falso">
+                    <p class="text-center">Infelizmente você errou. Tente novamente.</p>
+                </div>
+                <div class="feedback feedback-incorreto" data-pergunta="verdadeiro-falso">
+                    <p class="text-center">Que pena, você errou.</p>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,31 @@
+.hero {
+
+    #polaroid {
+        max-height: 24rem;
+        filter: drop-shadow(10px 10px 15px var(--shadow));
+    }
+
+    .key-items {
+        margin: 2rem auto 2rem .5rem;
+
+    .icon {
+        width: 24px;
+        height: 24px;
+        fill: blueviolet;
+    }
+
+    .title{
+        font-size: 1.3rem;;
+    }
+
+    img{
+        fill: none!;
+    }
+}
+
+.buttons .btn {
+    margin-block: .3rem;
+
+}
+    
+}

@@ -1,0 +1,46 @@
+.dynamic-buttons {
+    .info {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .info.show {
+        display: flex;
+        opacity: 1;
+    }
+
+    .btn-dynamic {
+        border-radius: 3rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn-dynamic, .btn-dynamic:focus, .btn-dynamic:focus-visible {
+        background-color: var(--ultra-white);
+        color: var(--orange-mid);
+        border: 2px solid var(--orange-mid);
+        padding: 10px 20px;
+        margin-left: -2px;
+    }
+
+    .btn-dynamic:not(:last-child) {
+        border-right: none;
+    }
+
+    .btn-dynamic:hover {
+        transform: scale(1.05) !important;
+    }
+
+    .btn-dynamic.active {
+        background-color: var(--orange-mid);
+        color: var(--ultra-white);
+    }
+
+    ul li {
+        text-align: left;
+    }
+
+    .title {
+        font-size: 1.5rem;;
+    }
+}
