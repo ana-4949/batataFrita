@@ -47,18 +47,26 @@
                     .catch(error => console.error("Erro ao carregar a página:", error));
             }
 
-            function addEvaluationButtonListener() {
-                const button = document.getElementById("evaluation-button");
-                if (button) {
-                    button.addEventListener("click", function () {
-                        loadPage("pages/evaluation.html");
-                        const script = document.createElement("script");
-                        script.src = "scripts/evaluation.js";
-                        document.body.appendChild(script);
-                        $(window).scrollTop(0);
-                    });
-                }
+            function loadEvaluationScript() {
+            const script = document.createElement("script");
+            script.src = "scripts/evaluation.js";
+            script.onload = function () {
+                console.log("evaluation.js carregado");
+            };
+            document.body.appendChild(script);
+        }
+
+        function addEvaluationButtonListener() {
+            const button = document.getElementById("evaluation-button");
+            if (button) {
+                button.addEventListener("click", function () {
+                    loadPage("pages/evaluation.html");
+                    loadEvaluationScript();
+                    $(window).scrollTop(0);
+                });
             }
+        }
+
             const observer = new MutationObserver(() => {
                 if (document.getElementById("evaluation-button")) {
                     addEvaluationButtonListener();

@@ -124,7 +124,7 @@ a {
   text-decoration: none;
 }
 
-p, ul li {
+p, ul li, a {
   color: var( --text)
 }
 
